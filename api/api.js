@@ -8,17 +8,9 @@ var secret = 'harrypotter';
 module.exports = function (router) {
     // regstration api
 
-    // router.get('/myprofile', (req, res) => {
-    //     console.log('hi');
-    //     reg.findOne({ _id: req.decoded.id }, function (err, data) {
-    //         if (err) throw err;
-    //         if (!data) {
-    //             res.json({ success: false, message: 'Not Found user' })
-    //         } else {
-    //             res.json({ success: true, message: data })
-    //         }
-    //     })
-    // })
+    router.get('/', (req, res) => {
+        res.send('hello')
+    })
 
     // router.get("/", function (req, res) {
     //     reg.find({}, function (err, data) {
